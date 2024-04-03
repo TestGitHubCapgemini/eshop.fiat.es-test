@@ -346,10 +346,10 @@ var initESW = function(gslbBaseURL) {
     embedded_svc.menu.settings.language = 'nl_NL'; //For example, enter 'en' or 'en-US'
 
 		embedded_svc.menu.init(
-			'https://psa-customerfirst--preprod.sandbox.my.salesforce.com',
-			'https://d.la1-c1cs-fra.salesforceliveagent.com/chat',
+			'https://psa-customerfirst--devhotfix.sandbox.my.salesforce.com',
+			'https://d.la3-c1cs-fra.salesforceliveagent.com/chat',
 			gslbBaseURL,
-			'00D1x000000KYSu',
+			'00D5r0000004ddY',
 			'NL_Fiat'
 		);
 };
@@ -383,7 +383,7 @@ if (isMobileDevice) {
 
 if (!window.embedded_svc || !window.embedded_svc.menu) {
     var s = document.createElement('script');
-		s.setAttribute('src', 'https://psa-customerfirst--preprod.sandbox.my.salesforce.com/embeddedservice/menu/fab.min.js');
+		s.setAttribute('src', 'https://psa-customerfirst--devhotfix.sandbox.my.salesforce.com/embeddedservice/menu/fab.min.js');
     s.onload = function() {
         initESW(null);
     };
